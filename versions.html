@@ -3,10 +3,10 @@
         <title>Older versions of ZSAT Chess timer</title>
         <link rel = "icon" href = "./509aa165-9e80-413c-b4ce-a310ed707d8e_200x200.png">
     </head>
-    <body>
+    <body onload= "CreateTableFromJSON()">
         <style>
             th, td, p, input {
-                font:14px Verdana;
+                font:25px Verdana;
             }
             table, th, td 
             {
@@ -22,36 +22,7 @@
             <script>
                 function CreateTableFromJSON() {
                          var myBooks = 
-                    //     {
-                    //         "Book ID": "1",
-                    //         "Book Name": "Computer Architecture",
-                    //         "Category": "Computers",
-                    //         "Price": "125.60"
-                    //     },
-                    //     {
-                    //         "Book ID": "2",
-                    //         "Book Name": "Asp.Net 4 Blue Book",
-                    //         "Category": "Programming",
-                    //         "Price": "56.00"
-                    //     },
-                    //     {
-                    //         "Book ID": "3",
-                    //         "Book Name": "Popular Science",
-                    //         "Category": "Science",
-                    //         "Price": "210.40"
-                    //     }
-                    // ]
                      [
-            {
-              "version-code": 1,
-              "version-name": "1.0",
-              "fixed-issues": "Not able to start new match after time is run out, time for player 2 not flipped",
-              "issues-reported": "Stupid people are able to give in invalid values for time limit, Timer is flipped in X axis for Player 2, Player two and Player 1 names are swapped",
-              "playStore-status": "Not published - beta version",
-              "date-applied": "Not applicable",
-              "filename": "ZSAT_chess_timer-1.1.2_beta",
-              "download-link": '<a href= "./ZSAT_chess_timer-1.1.2_beta.apk">Here</a>'
-            },
             {
               "version-code": 2,
               "version-name": "1.1.3",
@@ -61,6 +32,17 @@
               "date-applied": "Not applicable",
               "filename": "ZSAT_chess_timer-1.1.3_beta",
               "download-link": '<a href= "./ZSAT_chess_timer-1.1.3_beta.apk">Here</a>'
+            },
+
+            {
+              "version-code": 1,
+              "version-name": "1.0",
+              "fixed-issues": "Not able to start new match after time is run out, time for player 2 not flipped",
+              "issues-reported": "Stupid people are able to give in invalid values for time limit, Timer is flipped in X axis for Player 2, Player two and Player 1 names are swapped",
+              "playStore-status": "Not published - beta version",
+              "date-applied": "Not applicable",
+              "filename": "ZSAT_chess_timer-1.1.2_beta",
+              "download-link": '<a href= "./ZSAT_chess_timer-1.1.2_beta.apk">Here</a>'
             }
       
                     ]
@@ -106,7 +88,6 @@
                     divContainer.appendChild(table);
                 }
             </script>
-            <button onclick= "CreateTableFromJSON()">Click here to view all versions</button>
                 <p id= "showData"></p>
     </body>
 </html>
